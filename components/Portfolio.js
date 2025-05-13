@@ -1,4 +1,5 @@
 // components/Portfolio.jsx
+import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -48,7 +49,7 @@ function ProjectCard({ title, category, image }) {
   return (
     <div className="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
       <div className="relative h-64 overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={title}
           className="w-full h-full bg-gray-200 object-contain transform group-hover:scale-105 transition-transform duration-500"

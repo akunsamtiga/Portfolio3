@@ -1,5 +1,7 @@
 // components/Brands.jsx
 import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Brands() {
   return (
     <section className="py-16 bg-gray-100">
@@ -20,10 +22,10 @@ export default function Brands() {
 
           {/* Logo Brands */}
           <div className="grid grid-cols-2 gap-8 md:gap-16">
-            <img src="/images/d1.jpg" alt="Indeed" className="h-16 object-contain opacity-70 hover:opacity-100 transition duration-300" />
-            <img src="/images/d2.jpg" alt="Netflix" className="h-18 object-contain opacity-70 hover:opacity-100 transition duration-300" />
-            <img src="/images/d3.jpg" alt="Shin-Etsu" className="h-18 object-contain opacity-70 hover:opacity-100 transition duration-300" />
-            <img src="/images/d4.jpg" alt="ARTEX" className="h-16 object-contain opacity-70 hover:opacity-100 transition duration-300" />
+            <Image src="/images/d1.jpg" alt="Indeed" className="h-16 object-contain opacity-70 hover:opacity-100 transition duration-300" />
+            <Image src="/images/d2.jpg" alt="Netflix" className="h-18 object-contain opacity-70 hover:opacity-100 transition duration-300" />
+            <Image src="/images/d3.jpg" alt="Shin-Etsu" className="h-18 object-contain opacity-70 hover:opacity-100 transition duration-300" />
+            <Image src="/images/d4.jpg" alt="ARTEX" className="h-16 object-contain opacity-70 hover:opacity-100 transition duration-300" />
           </div>
         </div>
       </div>

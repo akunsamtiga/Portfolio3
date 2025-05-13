@@ -50,7 +50,7 @@ function TestimonialCard({ name, role, avatar, quote }) {
           <p className="text-sm text-gray-500">{role}</p>
         </div>
       </div>
-      <p className="text-gray-700 italic flex-grow">"{quote}"</p>
+      <p className="text-gray-700 italic flex-grow">&ldquo;{quote}&rdquo;</p>
     </div>
   );
 }
