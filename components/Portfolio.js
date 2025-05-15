@@ -6,7 +6,7 @@ export default function Portfolio() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Judul */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-600">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-700">
           Let’s have a look at my portfolio.
         </h2>
 
@@ -21,22 +21,12 @@ export default function Portfolio() {
 
         {/* Grid Proyek */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Project 1 */}
+          {/* Project Cards */}
           <ProjectCard title="Real Estate Website" category="Web Design" image="/images/r1.webp" />
-          
-          {/* Project 2 */}
           <ProjectCard title="NFT Dashboard Design" category="Dashboard" image="/images/r2.webp" />
-
-          {/* Project 3 */}
           <ProjectCard title="Habit Tracker App" category="Mobile App" image="/images/r3.webp" />
-
-          {/* Project 4 */}
           <ProjectCard title="Finance Dashboard" category="Dashboard" image="/images/r4.webp" />
-
-          {/* Project 5 */}
           <ProjectCard title="E-commerce Branding" category="Branding" image="/images/r5.webp" />
-
-          {/* Project 6 */}
           <ProjectCard title="Medical Website UI" category="Web Design" image="/images/r6.webp" />
         </div>
       </div>
@@ -48,11 +38,12 @@ export default function Portfolio() {
 function ProjectCard({ title, category, image }) {
   return (
     <div className="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative w-full h-64">
         <Image
           src={image}
           alt={title}
-          className="w-full h-full bg-gray-200 object-contain transform group-hover:scale-105 transition-transform duration-500"
+          fill
+          className="object-cover transform group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
           <div>

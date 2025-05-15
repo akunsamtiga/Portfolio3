@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold text-gray-800">SanzyStore</h3>
             <p className="text-sm text-gray-500 mt-2">
-              Copyright © 2022 SANZY all rights reserved.
+              Copyright © 2022 Sanzystore all rights reserved.
             </p>
           </div>
 
